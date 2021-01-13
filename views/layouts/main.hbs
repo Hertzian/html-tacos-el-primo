@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Tacos El Primo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/picto-foundry-food.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
+    <link rel="icon" href="/favicon.ico">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <!-- Para que funcione mejor el menu movil -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Tacos el Primo</a>
+          </div>
+
+          <!-- colecta links de navegacion -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav main-nav  clear navbar-right ">
+              <li><a class="navactive color_animation" href="#top">Bienvenido</a></li>
+              <li><a class="color_animation" href="#story">Acerca</a></li>
+              <li><a class="color_animation" href="#pricing">Menu</a></li>
+
+              <li><a class="color_animation" href="#contact">Contacto</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    {{>messages}}
+    {{{body}}}
+
+    <!-- ============ Seccion Footer  ============= -->
+
+    <footer class="sub_footer">
+      <div class="container">
+        <!-- <div class="col-md-4"><p class="sub-footer-text text-center">&copy; tutofrutti</a></p></div> -->
+        <div class="col-md-12">
+          <p class="sub-footer-text text-center">&copy; Copiright Tacos el primo <span id="year"></span></p>
+        </div>
+        <!-- <div class="col-md-4"><p class="sub-footer-text text-center">Sitio elaborado por <a href="#" target="_blank">Eduardo Aguilar</a></p></div> -->
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+
+</html>
